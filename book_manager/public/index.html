@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Manager</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Book Manager</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Manager</h1>
 
-    <!-- Form to add or update a book -->
-    <form id="bookForm">
-      <h2>Add/Update Book</h2>
-      <input type="hidden" id="bookIndex">
-      <label>Title:</label><br>
-      <input type="text" id="title" required><br><br>
-      <label>Author:</label><br>
-      <input type="text" id="author" required><br><br>
-      <label>Year of Release:</label><br>
-      <input type="number" id="year" required><br><br>
-      <label>Genre:</label><br>
-      <input type="text" id="genre" required><br><br>
-      <button type="submit">Save Book</button>
-    </form>
+      <!-- Form to add or update a book -->
+      <form id="bookForm">
+        <h2>Add/Update Book</h2>
+        <input type="hidden" id="bookIndex" />
+        <label>Title:</label><br />
+        <input type="text" id="title" required /><br /><br />
+        <label>Author:</label><br />
+        <input type="text" id="author" required /><br /><br />
+        <label>Year of Release:</label><br />
+        <input type="number" id="year" required /><br /><br />
+        <label>Genre:</label><br />
+        <input type="text" id="genre" required /><br /><br />
+        <button type="submit">Save Book</button>
+      </form>
 
-    <!-- Search functionality -->
-    <h2>Search Books</h2>
-    <input type="text" id="searchInput" placeholder="Search by title, author, or genre" oninput="searchBooks()">
+      <!-- Search functionality -->
+      <h2>Search Books</h2>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by title, author, or genre"
+      />
 
-    <!-- Display books -->
-    <h2>Book List</h2>
-    <ul id="bookList"></ul>
-  </div>
+      <!-- Display books -->
+      <h2>Book List</h2>
+      <ul id="bookList"></ul>
+    </div>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

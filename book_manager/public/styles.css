@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('library-background.png'); /* Use the background image */
+  background-image: url("library-background.png"); /* Use the background image */
   background-size: cover; /* Ensure the background covers the entire screen */
   background-position: center; /* Center the background image */
   background-attachment: fixed; /* Keep the background fixed while scrolling */
@@ -11,12 +11,18 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9); /* Add some transparency to the container */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Add some transparency to the container */
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #333;
 }
 
@@ -24,16 +30,18 @@ label {
   font-weight: bold;
 }
 
-input[type="text"], input[type="number"], input[type="checkbox"] {
+input[type="text"],
+input[type="number"],
+input[type="checkbox"] {
   width: calc(100% - 16px); /* Adjust width to account for padding */
   padding: 8px;
   margin-bottom: 10px;
   padding-right: 8px; /* Padding on the right to match left padding */
-  padding-left: 8px;  /* Padding on the left */
+  padding-left: 8px; /* Padding on the left */
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   padding: 10px;
   border: none;
